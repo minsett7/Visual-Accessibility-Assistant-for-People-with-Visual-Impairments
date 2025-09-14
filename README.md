@@ -1,1 +1,0 @@
-# Visual-Accessibility-Assistant-for-People-with-Visual-Impairments

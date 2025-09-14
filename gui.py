@@ -47,27 +47,7 @@ class AppGUI:
         ]}
         self._build()
 
-    # def _build(self):
-    #     self.root.title("Visual Assistant — Laptop")
-    #     self.root.geometry("520x300")
-    #     self.root.resizable(False, False)
-    #     style = ttk.Style()
-    #     style.configure("TButton", font=("Segoe UI", 14))
-
-    #     self.btn = ttk.Button(self.root, text="🎙️ HOLD TO TALK")
-    #     self.btn.pack(pady=16, padx=20, fill='x')
-    #     self.btn.bind('<ButtonPress-1>', self._on_press)
-    #     self.btn.bind('<ButtonRelease-1>', self._on_release)
-
-    #     self.entry = ttk.Entry(self.root, font=("Segoe UI", 12))
-    #     self.entry.pack(pady=8, padx=20, fill='x')
-    #     self.entry.insert(0, "(Optional) Type a question and press Enter…")
-    #     self.entry.bind('<Return>', self._on_enter)
-
-    #     self.log = tk.Text(self.root, height=8, font=("Consolas", 11))
-    #     self.log.pack(pady=8, padx=20, fill='both', expand=True)
-    #     self._log("Ready. Camera is detecting. Hold the button to ask.")
-
+    
     def _build(self):
         self.root.title("Visual Assistant — Laptop")
         self.root.geometry("560x340")

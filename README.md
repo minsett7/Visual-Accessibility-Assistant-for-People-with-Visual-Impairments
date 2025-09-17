@@ -12,3 +12,30 @@ Users can:
 - Ask questions about their surroundings using voice.
 - Get intelligent, context-aware answers about obstacles, people, and objects.
 - Hear the response instantly via audio output.   
+
+## System Flow
+
+- User Input: Voice or image (camera capture).
+- Speech-to-Text (STT): Converts spoken question into text.
+- Object Detection: Identifies objects in the scene using YOLOv8.
+- LLM + Knowledge Base: Answers user’s question with reasoning.
+- Text-to-Speech (TTS): Converts answer into speech for the user.
+
+## Features
+
+- Real-time object detection with YOLOv8.
+- Speech recognition for hands-free interaction.
+- Conversational responses using LLaMA (via Groq API).
+- Voice output for accessibility.
+- Modular design (each component can be improved separately).
+
+## Tech Stack  
+
+| Component         | Tool / Library                          |  
+|------------------|------------------------------------------|  
+| Object Detection | YOLOv8 (Ultralytics)                     |  
+| LLM              | LLaMA 3.1 (via Groq API)                 |  
+| Speech-to-Text   | OpenAI Whisper / Google Speech API        |  
+| Text-to-Speech   | gTTS / pyttsx3                           |  
+| Backend          | Flask / FastAPI                          |  
+| Frontend         | Tkinter (Desktop) / Flutter (Mobile)     |  

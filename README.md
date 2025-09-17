@@ -15,11 +15,11 @@ Users can:
 
 ## System Flow
 
-- User Input: Voice or image (camera capture).
-- Speech-to-Text (STT): Converts spoken question into text.
-- Object Detection: Identifies objects in the scene using YOLOv8.
-- LLM + Knowledge Base: Answers user’s question with reasoning.
-- Text-to-Speech (TTS): Converts answer into speech for the user.
+1. User Input: Voice or image (camera capture).
+2. Speech-to-Text (STT): Converts spoken question into text.
+3. Object Detection: Identifies objects in the scene using YOLOv8.
+4. LLM + Knowledge Base: Answers user’s question with reasoning.
+5. Text-to-Speech (TTS): Converts answer into speech for the user.
 
 ## Features
 
@@ -42,9 +42,45 @@ Users can:
 
 ## Installation
 
-Clone the repo:
+1. Clone the repo:
 
 ```bash
 git clone https://github.com/minsett7/Visual-Accessibility-Assistant-for-People-with-Visual-Impairments.git
 cd Visual-Accessibility-Assistant-for-People-with-Visual-Impairments
+```
+
+2. Create a virtual environment & install dependencies:
+
+```bash
+python -m venv venv
+source venv/bin/activate    # On Linux/Mac
+venv\Scripts\activate       # On Windows
+pip install -r requirements.txt
+```
+
+3. Run the application:
+
+```bash
+python app.py
+```
+
+## Usage
+
+```bash
+Visual-Accessibility-Assistant-for-People-with-Visual-Impairments
+┣ 📜 app.py # Main application entry point
+┣ 📜 ask_groq.py # LLM integration (Groq / LLaMA API)
+┣ 📜 audio_tts.py # Text-to-Speech module
+┣ 📜 camera_loop.py # Handles camera input loop
+┣ 📜 config.py # Configuration settings
+┣ 📜 distance.py # Distance calculation logic
+┣ 📜 gui.py # GUI interface for desktop
+┣ 📜 hazard.py # Hazard detection logic
+┣ 📜 proximity.py # Proximity detection logic
+┣ 📜 questions.txt # Sample user questions
+┣ 📜 scene.py # Scene description module
+┣ 📜 stt_recorder.py # Speech-to-Text recorder
+┣ 📜 utils_coco.py # Utility functions for COCO dataset labels
+┣ 📜 yolov8n.pt # Pretrained YOLOv8 model weights
+┗ 📜 README.md # Project documentation
 ```

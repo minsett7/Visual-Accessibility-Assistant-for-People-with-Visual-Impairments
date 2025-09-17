@@ -66,7 +66,7 @@ python app.py
 
 ## Usage
 
-- Create Groq account and add you Groq key to use in ask_groq.py.
+- Create Groq account and add you Groq key in ask_groq.py.
 - Start the app.
 - Press the voice button to ask a question (e.g., “What’s in front of me?”).
 - The system captures the camera feed, analyzes the scene, and answers.

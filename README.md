@@ -44,7 +44,7 @@ Users can:
 
 Clone the repo:
 
-''' bash
+```bash
 git clone https://github.com/minsett7/Visual-Accessibility-Assistant-for-People-with-Visual-Impairments.git
 cd Visual-Accessibility-Assistant-for-People-with-Visual-Impairments
-'''
+```

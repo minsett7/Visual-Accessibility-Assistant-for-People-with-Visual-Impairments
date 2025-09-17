@@ -3,7 +3,7 @@
 import os, json
 from groq import Groq
 
-client = Groq(api_key="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")  # use env var
+client = Groq(api_key="YOUR_GROQ_KEY")
 MODEL = "llama-3.1-8b-instant"
 
 HAZARD_CLASSES = {"car", "truck", "bus"}

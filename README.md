@@ -66,6 +66,14 @@ python app.py
 
 ## Usage
 
+- Start the app.
+- Press the voice button to ask a question (e.g., “What’s in front of me?”).
+- The system captures the camera feed, analyzes the scene, and answers.
+- Response is spoken back to the user.
+
+
+## Project Structure
+
 ```bash
 Visual-Accessibility-Assistant-for-People-with-Visual-Impairments
 ┣ 📜 app.py # Main application entry point
@@ -84,3 +92,30 @@ Visual-Accessibility-Assistant-for-People-with-Visual-Impairments
 ┣ 📜 yolov8n.pt # Pretrained YOLOv8 model weights
 ┗ 📜 README.md # Project documentation
 ```
+
+## Advantages
+
+- Lightweight and modular.
+- Uses open-source models (LLaMA, YOLO).
+- Accessible via voice-only interaction.
+
+## Limitations
+
+- Needs stable internet for Groq API calls.
+- Object detection accuracy depends on YOLOv8 training.
+- Limited real-world testing so far.
+
+## Future Work
+
+- Add OCR for reading signs/text.
+- Support GPS-based navigation.
+- Improve edge deployment (offline use).
+- Enhance multilingual support.
+
+## Contributors
+
+My teammembers
+- Min Sett Paing
+- Nyan Pyae Maw
+- Akeri Myint Zaw
+- Su Myat Wai

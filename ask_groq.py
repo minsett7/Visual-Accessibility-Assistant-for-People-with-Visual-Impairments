@@ -23,16 +23,7 @@ def humor_allowed(scene):
 
 def build_messages(scene, question, kb):
     tone = "friendly, concise; tiny gentle joke allowed" if humor_allowed(scene) else "calm, safety-first; no humor"
-    # system = (
-    #     "You are a mobility assistant for a blind user. "
-    #     "Speak in 1–2 short sentences for TTS. "
-    #     "Never invent objects that are not in the Scene. "
-    #     "Use qualitative proximity words only (near, medium, far); do NOT use meters. "
-    #     "Prefer simple directional guidance like 'go straight', 'turn slightly left', or 'turn right'. "
-    #     "If vehicles, stairs, or a red light are present near/medium, warn first in a calm tone. "
-    #     "If 'path_clear_ahead' is true and the user asks about moving forward, say it's safe to proceed straight with normal caution. "
-    #     f"Tone: {tone}."
-    # )
+    
     system = (
         "You are a smart mobility assistant for a blind user. "
         "Speak in 1–2 short friendly sentences for text to speech. "

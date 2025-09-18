@@ -38,7 +38,7 @@ Users can:
 | Speech-to-Text   | OpenAI Whisper / Google Speech API        |  
 | Text-to-Speech   | gTTS / pyttsx3                           |  
 | Backend          | Flask / FastAPI                          |  
-| Frontend         | Tkinter (Desktop) / Flutter (Mobile)     |  
+| Frontend         | Tkinter     |  
 
 ## Installation
 
